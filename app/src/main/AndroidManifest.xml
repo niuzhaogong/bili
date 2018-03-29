@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.zndroid.bili">
+
+    <!-- 用户权限设置 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:name=".MyApp"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activitys.SplashActivity"
+            android:theme="@style/ColorTranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activitys.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activitys.MainActivity" android:theme="@style/MainActivityColorTranslucentTheme" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name=".ui.activitys.TotalStationSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Search"/>
+        <activity android:name=".ui.activitys.LivePlayerActivity" />
+        <activity android:name=".ui.activitys.OffLineDownloadActivity" />
+        <activity android:name=".ui.activitys.VipActivity" />
+        <activity android:name=".ui.activitys.ActivityCenterActivity" />
+        <activity android:name=".ui.activitys.AdvertisingActivity" />
+        <activity android:name=".ui.activitys.GameCentreActivity" />
+        <activity android:name=".ui.activitys.AppIntroduceActivity" />
+        <activity android:name=".ui.activitys.HotBitmapGGInfoActivity" />
+        <activity android:name=".ui.activitys.BangumiDetailsActivity" />
+        <activity android:name=".ui.activitys.AllAreasRankActivity" />
+        <activity android:name=".ui.activitys.VideoDetailsActivity" />
+        <activity android:name=".ui.activitys.VideoPlayerActivity" />
+        <activity android:name=".ui.activitys.OriginalRankActivity" />
+        <activity android:name=".ui.activitys.BangumiScheduleActivity" />
+        <activity android:name=".ui.activitys.BangumiIndexActivity" />
+    </application>
+
+</manifest>
